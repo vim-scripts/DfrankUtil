@@ -2,7 +2,7 @@
 " this is plugin-library: DfrankUtil
 "
 
-let g:dfrank#util#version     = 100
+let g:dfrank#util#version     = 101
 let g:dfrank#util#loaded      = 1
 
 " Trim(sString)
@@ -83,7 +83,7 @@ function! dfrank#util#IsFileInSubdir(sFilename, sDirname)
       let l:sFilename = tolower(l:sFilename)
    endif
 
-   return dfrank#util#IsFileInSubdirSimple(l:sDirname, l:sFilename)
+   return dfrank#util#IsFileInSubdirSimple(l:sFilename, l:sDirname)
 endfunction
 
 
